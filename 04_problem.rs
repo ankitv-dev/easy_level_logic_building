@@ -5,7 +5,7 @@ ranges (e.g., 90–100 is 'A') and print the grade.
 */
 
 fn main() {
-    let stu: usize = 80;
+    pri
     println!("{}", grade(stu))
 }
 
