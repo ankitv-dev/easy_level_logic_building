@@ -29,8 +29,7 @@ How to use the programs
 
 Install Rust using the official toolchain installer (rustup).
 Clone or download this repository.
-Open any program file inside the src or examples folder, depending on your structure.
-Run programs using cargo run or rustc filename.rs depending on how your project is organized.
+Run programs using rustc filename.rs depending on how your project is organized.
 
 Feel free to edit programs, add your own variations, or combine multiple concepts in new files.
 
