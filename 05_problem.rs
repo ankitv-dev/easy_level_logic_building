@@ -11,7 +11,7 @@ fn main() {
     io::stdout().flush().unwrap();
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read");
-    let x:i32 = match input.trim().parse() {
+    let x: i32 = match input.trim().parse() {
         Ok(num) => num,
         Err(_) => {
             println!("Please enter valid value");
@@ -19,6 +19,6 @@ fn main() {
         }
     };
     for i in 1..=10 {
-        println!("{} X {} = {}", x, i, x*i);
+        println!("{} X {} = {}", x, i, x * i);
     }
 }

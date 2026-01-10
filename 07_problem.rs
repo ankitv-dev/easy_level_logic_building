@@ -1,8 +1,8 @@
 /*
-Create a program that accepts a positive integer `N`.
-Use a loop to calculate the sum of all numbers from 1 up to
-and including `N`, then display the total.
+Write a function that calculates the factorial of a non-negative integer provided by the user.
+The logic should use a loop to multiply the numbers and return the result for printing.
 */
+
 use std::io::{self, Write};
 
 fn main() {
@@ -13,13 +13,13 @@ fn main() {
     let n: usize = match input.trim().parse() {
         Ok(num) => num,
         Err(_) => {
-            println!("Please enter vaild value");
+            println!("Please enter valid value");
             return;
         }
     };
-    let mut t: usize = 0;
-    for i in 1..=n {
-        t += i;
+    let mut t: usize = 1;
+    for i in 2..=n {
+        t *= i
     }
     println!("{}", t)
 }
